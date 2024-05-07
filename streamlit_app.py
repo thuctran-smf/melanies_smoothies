@@ -43,7 +43,6 @@ if time_to_insert:
 # Displaying fruityvice nutrition value
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
-
+st.text(fruityvice_response.json())
 
 
